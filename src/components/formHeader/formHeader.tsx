@@ -1,6 +1,6 @@
 import styles from './formHeader.module.css';
 import formConnectorIcon from '../../assets/formConnector.svg';
-import closeIcon from '../../assets/closeIcon.svg';
+import closeIcon from '../../assets/CloseIcon.svg';
 
 const FormHeader = () => {
   return (
