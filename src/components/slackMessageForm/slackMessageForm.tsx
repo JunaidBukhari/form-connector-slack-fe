@@ -80,6 +80,13 @@ const SlackMessageForm = ({
           ...dataToSave,
         })
       );
+    } else if (!isNew) {
+      dispatch(
+        handleSaveNotification({
+          id: uniqueId,
+          ...dataToSave,
+        })
+      );
     } else {
       dispatch(
         handleSaveNotification({
