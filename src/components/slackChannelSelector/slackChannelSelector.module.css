@@ -1,0 +1,145 @@
+.container {
+  align-self: stretch;
+  height: 176px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.header {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.headerLeft {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.headerTitle {
+  color: #f5f5f5;
+  font-size: 11.5px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+.headerSubtitle {
+  color: #bdbdbd;
+  font-size: 11.5px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+.deleteNotification {
+  width: 123.06px;
+  padding: 4.27px 8.53px;
+  border-radius: 4.23px;
+  border: 1.07px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.13px;
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 12.27px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 17.06px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.selectionContainer > select {
+  padding: 4px 4px 4px 4px;
+  width: 316px;
+  background-color: #454545;
+  color: #f5f5f5;
+  font-family: Inter;
+  font-size: 11.5px;
+  flex: 1 0 0;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0.5px 1px 0px #000,
+    0px 0.5px 0.5px 0px rgba(255, 255, 255, 0.12) inset;
+}
+
+.channelItem {
+  background: rgba(0, 124.64, 239.7, 0.4);
+  box-shadow: inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.selectedChannels {
+  display: flex;
+  gap: 10px;
+}
+.channelText {
+  color: #f5f5f5;
+  font-size: 11.5px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+.notificationsContainer {
+  padding: 2px 8px;
+  background: #373737;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.notificationsContent {
+  width: 688px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.notificationsHeader {
+  color: #a3a3a3;
+  font-size: 10px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+.radioInput {
+  margin: 0;
+  margin-right: 6px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+.notificationOptions {
+  display: flex;
+}
+
+.notificationOption {
+  display: flex;
+  color: #bdbdbd;
+  font-size: 11.5px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
