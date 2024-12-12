@@ -80,7 +80,7 @@ const SlackMessageForm = ({
           ...dataToSave,
         })
       );
-    } else if (!isNew) {
+    } else if (!isNew && !notification) {
       dispatch(
         handleSaveNotification({
           id: uniqueId,
@@ -88,9 +88,25 @@ const SlackMessageForm = ({
         })
       );
     } else {
+      if (notification?.id) {
+        dispatch(
+          handleSaveNotification({
+            id: notification.id,
+            ...dataToSave,
+          })
+        );
+      }else{
+        dispatch(
+          handleSaveNotification({
+            id: uniqueId,
+            ...dataToSave,
+          })
+        );
+      }
+      const newId = uuidv4();
       dispatch(
         handleSaveNotification({
-          id: uniqueId,
+          id: newId,
           channels: [],
           text: '',
           block: [],
@@ -126,7 +142,7 @@ const SlackMessageForm = ({
         <>
           <NewSlackNotification onclick={() => handleSaveOrAdd(true)} />
           <div className={styles.container}>
-            <SaveButton onclick={handleSaveOrAdd} />
+            <SaveButton onclick={() => handleSaveOrAdd()} />
           </div>
         </>
       )}
